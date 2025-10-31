@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker AI Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Poker AI Simulator</h1>
+    <div id="game-table">
+        <div id="community-cards">
+            <h2>Community Cards</h2>
+            <div id="cards"></div>
+        </div>
+
+        <div id="players">
+            <h2>Players</h2>
+            <div class="player" id="player-1">
+                <h3>Your Hand</h3>
+                <div class="hand"></div>
+                <button id="fold-btn">Fold</button>
+                <button id="bet-btn">Bet</button>
+            </div>
+            <!-- Repeat for other players (AI players) -->
+            <div class="player" id="player-2">
+                <h3>AI 1</h3>
+                <div class="hand"></div>
+            </div>
+            <div class="player" id="player-3">
+                <h3>AI 2</h3>
+                <div class="hand"></div>
+            </div>
+            <div class="player" id="player-4">
+                <h3>AI 3</h3>
+                <div class="hand"></div>
+            </div>
+        </div>
+
+        <div id="actions">
+            <h2>Actions</h2>
+            <p>Current Bet: <span id="current-bet">0</span></p>
+            <button id="next-round">Next Round</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
